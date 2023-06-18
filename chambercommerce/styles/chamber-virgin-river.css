@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: "Sansita", sans-serif;
+  }
+  
+header {
+    padding: 80px;
+    text-align: left;
+    color: bold black;
+    font-size: 30px;
+ }
+
+/* Background image for header */
+#header-background{
+    width:100%;
+    height: auto;
+    background:url(https://th.bing.com/th/id/OIP._JANLXqpT4e6RSvNsH6TYgHaE8?pid=ImgDet&rs=1)
+}
+
+/* Nav bar -breadcrumb style */
+.active{
+    font-size: 60px;
+    border-style: ridge;
+}
+.breadcrumb {
+    padding: 0 .5rem;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "→";
+
+}
+
+/* Change font color of nav bar */
+.active{
+color: black;
+font-size: larger;
+width:100%;
+height: auto;
+}
+
+
+/* nav bar adjustment */
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+    justify-content: space-evenly;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+/* removes . */
+nav ul {
+	list-style-type: none;
+}
+
+nav {
+	background-color: rgb(120, 160, 185);
+}
+
+
+nav a:hover {
+	border: 1px solid #fff;
+}
+.active {
+	color: black;
+}
+
+
+/* style main */
+main {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(120, 160, 185);
+  }
+
+  main > h2, p, .info {
+    margin: 10px;
+    padding: 5px;
+  }
+  .info {
+    background: white;
+  }
+
+  .info > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+
+/* Footer with social media */
+
+footer{
+    width:100%;
+    height: auto;
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
