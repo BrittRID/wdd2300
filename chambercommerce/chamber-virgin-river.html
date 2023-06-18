@@ -8,6 +8,7 @@
     <meta name="author" content="Brittany Ridley">
     <meta property="og:type" content="website homepage" />
     <meta property="og:url" content="https://brittrid.github.io/">
+    <script src="homepage/scripts/getDates.js"> </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -73,17 +74,26 @@
      </section>
      <br>
     </main>
-    <footer>
+    <footer id = "result">
 
    <a href="#" class="fa fa-facebook"></a>
    <a href="#" class="fa fa-twitter"></a>
    <a href="#" class="fa fa-google"></a>
    <a href="#" class="fa fa-linkedin"></a>
    <a href="#" class="fa fa-youtube"></a>
-   <div class="footer_copyright">
-    <p>&copy; 2022 virgin River Chamber of Commerce | Phone: 222-2222 | Adderess: 122 First Street in New Westminster.</p>
-  </div>
+   
+    
+   <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("result").innerHTML = "The document was last modified on : " + lastModifiedDate;
+ </script>
+ <div id = "result"><p>&copy; Virgin River Chamber of Commerce | Phone: 222-2222 | Address: 122 First Street in New Westminster | last modified on</p></div>
+ <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-twitter"></a>
+   <a href="#" class="fa fa-google"></a>
+   <a href="#" class="fa fa-linkedin"></a>
+   <a href="#" class="fa fa-youtube"></a>
     </footer>
-    <script src="scripts/site-plan.js"></script>
 </body>
 </html>

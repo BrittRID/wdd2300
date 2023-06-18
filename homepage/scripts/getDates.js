@@ -6,12 +6,6 @@ function myFunction() {
 }
 
 
-// Year
-
-// const date = new Date("2023");
-// let year = date.getFullYear();
-
-// document.getElementById('year').innerHTML = year;
 
 // hamburger menu
 
@@ -32,6 +26,3 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-// window.onload=function(){
-//     hamburger.addEventListener('click', toggleMenu);
-//   }
