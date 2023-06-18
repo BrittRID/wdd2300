@@ -52,89 +52,167 @@ nav a:hover {
 a {
     text-decoration: none;
 }
-/* responsive ≡ hamburger menu  */  
-.head{
-    border-bottom: 1px solid #E2E8F0;
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-}
-.hamburger {
-    display: none;
-}
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+s
 
-.nav-item {
-    margin-left: 5rem;
-}
+/* Chamber page/css */
 
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
+#header-background{
+    width:100%;
+    height: auto;
+    background:url(https://th.bing.com/th/id/OIP._JANLXqpT4e6RSvNsH6TYgHaE8?pid=ImgDet&rs=1)
 }
-.nav-link:hover{
-    color: #482ff7;
-}
+/* Change font color of nav bar */
+.active{
+    color: black;
+    font-size: larger;
+    width:100%;
+    height: auto;
+    }
 
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
+    
+    /* nav bar adjustment */
+    @media (min-width: 640px) {
+        nav ul {
+            display: flex;
+        justify-content: space-evenly;
+        }
+        nav ul li {
+            flex: 1 1 100%;
+        }
+    }
+    
+    /* removes . */
+    /* nav ul {
+        list-style-type: none;
+    }
+    
+    nav {
+        background-color: rgb(120, 160, 185);
+    }
+    
+    
+    nav a:hover {
+        border: 1px solid #fff;
+    }
+    .active {
+        color: black;
+    } */
+    
+    
+    /* style main */
+    main {
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(120, 160, 185);
+      }
+    
+      main > h2, p, .info {
+        margin: 10px;
+        padding: 5px;
+      }
+      .info {
+        background: white;
+      }
+    
+      .info > h2, p {
+        margin: 4px;
+        font-size: 90%;
+      }
+    
+    /* Footer with social media */
+    
+    footer{
+        width:100%;
+        height: auto;
+    }
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 50px;
         text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
+        text-decoration: none;
+        margin: 5px 2px;
+       
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+    
+      /* Hamburger menu */
+      #hamnav {
+        width: 100%;
+        background: #4da9db;
+      }
+      
+      /* (B) HORIZONTAL MENU ITEMS */
+      #hamitems {
+         display: flex;
+         }
+      
+      
+      
+      #hamitems a {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+      #hamitems a:hover { background: #6f9ca2; }
+      
+      /* (C) HIDE HAMBURGER */
+      #hamnav label, #hamburger { display: none; }
+    
+      /* [ON SMALL SCREENS] */
+    @media screen and (max-width: 768px){
+      /* (A) BREAK INTO VERTICAL MENU */
+      #hamitems a {
+        box-sizing: border-box;
         display: block;
-        cursor: pointer;
+        width: 100%;
+        border-top: 1px solid #35a0da;
+      }
+     
+      /* (B) SHOW HAMBURGER ICON */
+      #hamnav label { 
+        display: inline-block; 
+        color: white;
+        background: #202222;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+      }
+    
+      /* (C) TOGGLE SHOW/HIDE MENU */
+      #hamitems { display: none; }
+      #hamnav input:checked ~ #hamitems { display: block; }
     }
-	.hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}

@@ -27,7 +27,7 @@ header {
 }
 
 /* Nav bar -breadcrumb style */
-.active{
+/* .active{
     font-size: 60px;
     border-style: ridge;
 }
@@ -48,7 +48,7 @@ header {
     margin: 0 .25rem;
     content: "→";
 
-}
+} */
 
 /* Change font color of nav bar */
 .active{
@@ -152,3 +152,49 @@ footer{
     background: #bb0000;
     color: white;
   }
+
+  /* Hamburger menu */
+  #hamnav {
+    width: 100%;
+    background: #69a4c3;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: #af0d0d; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+  /* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #35a0da;
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #27a0e6;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
