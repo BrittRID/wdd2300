@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Fronted Development - Brittany Ridley - Course assignment portal">
+    <meta name="author" content="Brittany Ridley">
+    <meta property="og:type" content="website homepage" />
+    <meta property="og:url" content="https://brittrid.github.io/">
+    <script src="homepage/scripts/getDates.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chambercommerce/styles/chamber-virgin-river.css"/>
+    <link rel="stylesheet" href="homepage/styles/base.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Add social media to header -->
+    <header id="header-background">
+    <div class="logo"></div>
+    <h1>Virgin Rivers Chamber of Commerce</h1>
+    </header>
+    <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+            <ul id="hamitems">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="active" href="#">Discover</a></li>
+                <li><a class="active" href="#">Directory</a></li>
+                <li><a class="active" href="#">Join</a></li>
+            </ul>
+    </nav>
+    <main>
+     <section class="card">
+        <h2 >Virgin Rivers Chamber of Commerce Call to action</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada 
+            fames ac turpis egestas.
+             Vestibulum tortor quam, feugiat vitae, ultricies eget, 
+            tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. 
+            Aenean ultricies mi vitae est.
+             Mauris placerat eleifend leo.</p>
+     </section>
+     <br>
+     <section class="card">
+        <h2>Virgin Rivers Chamber of Commerce current event</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et 
+            malesuada fames ac turpis egestas.
+             Vestibulum tortor quam, feugiat vitae, ultricies eget,
+              tempor sit amet, ante.
+             Donec eu libero sit amet quam egestas semper. 
+             Aenean ultricies mi vitae est.
+              Mauris placerat eleifend leo.</p>
+     </section>
+     <br>
+     <section class="card"> 
+        <h2>Virgin Rivers Chamber of Commerce weather card section</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus 
+            et malesuada fames ac turpis egestas.
+             Vestibulum tortor quam, feugiat vitae, ultricies eget,
+              tempor sit amet, ante.
+             Donec eu libero sit amet quam egestas semper. 
+             Aenean ultricies mi vitae est.
+              Mauris placerat eleifend leo.</p>
+     </section>
+     <br>
+     <section class="card"> 
+        <h2>Virgin Rivers Chamber of Commerce spotlights' advertisements</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus 
+            et malesuada fames ac turpis egestas.
+             Vestibulum tortor quam, feugiat vitae, ultricies eget,
+              tempor sit amet, ante.
+             Donec eu libero sit amet quam egestas semper. 
+             Aenean ultricies mi vitae est.
+              Mauris placerat eleifend leo.</p>
+     </section>
+     <br>
+    </main>
+    <br>
+    <footer id = "result">
+   <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("result").innerHTML = "The document was last modified on : " + lastModifiedDate;
+ </script>
+ <div id = "result"><p>&copy; Brittany Ridley | WDD 230| Virgin River Chamber of Commerce | Phone: 222-2222 | Address: 122 First Street in New Westminster </p></div>
+ <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-twitter"></a>
+   <a href="#" class="fa fa-google"></a>
+   <a href="#" class="fa fa-linkedin"></a>
+   <a href="#" class="fa fa-youtube"></a>
+    </footer>
+   </body>
+</html>
