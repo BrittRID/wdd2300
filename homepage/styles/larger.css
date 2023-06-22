@@ -1,67 +1,7 @@
-* {
-	box-sizing: border-box;
-  }
-  
-  .container {
-	display: grid;
-	align-items: center;
-	justify-content: center;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 5px;
-  }
-  
-  .hero-name {
-	text-align: left;
-	font-size: 45px;
-	width: 300px;
-	margin: 0 auto;
-  }
-  
-  .hero-image {
-	max-width: 100%;
-	max-height: 100%;
-	width: 100%;
-	height: auto;
-  }
-  
-  .end {
-	border-style: outset;
-	font-size: large;
-	text-align: center;
-  }
-  
-  .text {
-	color: black;
-	font-size: 1.1rem;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	margin: 0;
-  }
-  
-  .cards {
-	padding: 1rem;
-	background: linear-gradient(to bottom left, #f6eff0 40%, #dcdad8 100%);
-  }
-  
-  .card {
-	background-color: white;
-	border-radius: 0.25rem;
-	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-  }
-  
-  .card-list {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  @media only screen and (min-width: 32rem) {
+/* In the larger.css file, encase all the CSS rules in a media query using a min-width conditional breakpoint of your choosing. */
+
+
+   @media only screen and (min-width: 32rem) {
 	span {
 	  background-color: green;
 	}
@@ -73,23 +13,98 @@
 	nav ul li {
 		flex: 1 1 100%;
 	}
-}
+} 
 
-/* Dark mode */
-.dark-mode {
-	background-color: black;
-	color: white;
-  }
-
+ /* Hamburger menu */
+        #hamnav {
+        width: 100%;
+        background: #4da9db;
+      }
+      
+      
+      #hamitems {
+         display: flex;
+         }
+      
+      #hamitems a {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+      #hamitems a:hover { background: #3060c0; }
+      
+     
+      #hamnav label, #hamburger { display: none; }
+    
   
-.dark {
-	position: absolute;
-	font-size: 3rem;
-	cursor: pointer;
-}
+    @media screen and (max-width: 768px){
+    
+      #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #9edfd7;
+      }
+     
+     
+      #hamnav label { 
+        display: inline-block; 
+        color: white;
+        background: #368a60;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+      }
+    
+     
+      #hamitems { display: none; }
+      #hamnav input:checked ~ #hamitems { display: block; }
+    }  
 
-.dark {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-}
+	 /* Footer with social media */
+    
+      footer{
+        width:100%;
+        height: auto;
+    }
+    .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+       
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }  
