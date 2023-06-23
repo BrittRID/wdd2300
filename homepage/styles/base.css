@@ -87,25 +87,7 @@ footer {
     letter-spacing: 2px;
     margin: 0;
   }  
-  /* Dark mode */
-  .dark-mode {
-	background-color: black;
-	color: white;
-  }
-
-  
-.dark {
-	position: absolute;
-	font-size: 3rem;
-	cursor: pointer;
-}
-
-.dark {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-}  
-
+ 
  /* Corrects hero image */
   
  

@@ -5,6 +5,8 @@ function myFunction() {
 
 }
 
+
+
 // hamburger menu
 
 const hamburger = document.querySelector(".hamburger");
@@ -23,6 +25,8 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
 
 
 

@@ -2,8 +2,9 @@
 
 
    @media only screen and (min-width: 32rem) {
+	/* Remove the color green and made span transparent */
 	span {
-	  background-color: green;
+	  background-color: transparent;
 	}
   }
   @media (min-width: 640px) {
@@ -108,3 +109,37 @@
         background: #bb0000;
         color: white;
       }  
+
+	  main img {
+		float: right;
+		margin: 0 0 1rem 1rem;
+		border: 1px solid #333;
+		box-shadow: 0 0 15px #777;
+	}
+	
+	#mode {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		font-size: 3rem;
+		cursor: pointer;
+	}
+	 /* Dark mode */
+	 .dark-mode {
+		background-color: black;
+		color: white;
+	  }
+	
+	  
+	.dark {
+		position: absolute;
+		font-size: 3rem;
+		cursor: pointer;
+	}
+	
+	.dark {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}  
+	
