@@ -16,7 +16,7 @@
 	}
 } 
 
- /* Hamburger menu */
+ Hamburger menu
         #hamnav {
         width: 100%;
         background: #4da9db;
@@ -35,6 +35,7 @@
         text-decoration: none;
         text-align: center;
       }
+      
       #hamitems a:hover { background: #3060c0; }
       
      
@@ -64,6 +65,10 @@
       #hamitems { display: none; }
       #hamnav input:checked ~ #hamitems { display: block; }
     }  
+
+    #hamburger.open::before {
+      content: "✖";
+    }
 
 	 /* Footer with social media */
     
