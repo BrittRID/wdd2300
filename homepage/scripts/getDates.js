@@ -27,17 +27,17 @@ function closeMenu() {
 }
 
 
-// Number of visits on page
-let visitorCount = localStorage.getItem("visitorCount") || 0;
+// // Number of visits on page
+// let visitorCount = localStorage.getItem("visitorCount") || 0;
 
-        // Increment the visitor count by 1
-        visitorCount++;
+//         // Increment the visitor count by 1
+//         visitorCount++;
         
-        // Update the visitor count on the page
-        document.getElementById("visitorCount").textContent = visitorCount;
+//         // Update the visitor count on the page
+//         document.getElementById("visitorCount").textContent = visitorCount;
 
-        // Store the updated visitor count in local storage
-        localStorage.setItem("visitorCount", visitorCount);
+//         // Store the updated visitor count in local storage
+//         localStorage.setItem("visitorCount", visitorCount);
 
 
 
