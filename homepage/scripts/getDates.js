@@ -28,24 +28,16 @@ function closeMenu() {
 
 
 // Number of visits on page
-const visitsDisplay = document.querySelector(".visits");
+let visitorCount = localStorage.getItem("visitorCount") || 0;
 
+        // Increment the visitor count by 1
+        visitorCount++;
+        
+        // Update the visitor count on the page
+        document.getElementById("visitorCount").textContent = visitorCount;
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
-}
-
-numVisits++;
-
-localStorage.setItem("numVisits-ls", numVisits);
-
-
-
+        // Store the updated visitor count in local storage
+        localStorage.setItem("visitorCount", visitorCount);
 
 
 
