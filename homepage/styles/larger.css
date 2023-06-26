@@ -1,21 +1,6 @@
 /* In the larger.css file, encase all the CSS rules in a media query using a min-width conditional breakpoint of your choosing. */
 
 
-   @media only screen and (min-width: 32rem) {
-	/* Remove the color green and made span transparent */
-	span {
-	  background-color: transparent;
-	}
-  }
-  @media (min-width: 640px) {
-	nav ul {
-		display: flex;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
-} 
-
  Hamburger menu
         #hamnav {
         width: 100%;
@@ -66,9 +51,79 @@
       #hamnav input:checked ~ #hamitems { display: block; }
     }  
 
-    #hamburger.open::before {
-      content: "✖";
+    #hamburger::before {
+      content: "☰";
     }
+    
+    #menu.open::before {
+      content: "";
+    } 
+
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+/* #menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: tomato;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+} */
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
 
 	 /* Footer with social media */
     
