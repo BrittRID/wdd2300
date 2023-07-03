@@ -239,3 +239,65 @@ label {
 	font-weight: bold;
 	margin-top: 20px;
   }
+
+  .container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+  }
+  
+  form {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+  }
+  
+  .form-row {
+	margin-bottom: 15px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  textarea {
+	height: 150px;
+  }
+  
+  input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #45a049;
+  }
+  
+  .benefits {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+	.container {
+	  grid-template-columns: 1fr 1fr;
+	}
+  }
