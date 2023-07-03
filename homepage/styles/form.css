@@ -1,3 +1,7 @@
+:root {
+    --main-bg-color: lightblue;
+  }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -547,14 +551,16 @@ body {
   font-size: 1.3rem;
 }
 
-#footer h2 {
+/* #footer h2 {
   text-align: center;
   font-size: 1.8rem;
   padding: 2.6rem;
   font-weight: 500;
   color: #fff;
   background: rgb(65, 65, 65);
-}
+} */
+
+
 
 /* ......../ media query /.......... */
 
@@ -697,29 +703,7 @@ body {
     text-align: center;
   }
 
-  .food-menu-container img {
-    margin: auto;
-  }
-
-  .food-menu-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .form-container {
-    width: 90%;
-  }
-
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-img {
-    width: 90%;
-    margin: 3rem auto;
-  }
-
+  
   .logo {
     position: absolute;
     top: 06px;
@@ -870,4 +854,34 @@ input[type=checkbox] {
 .ref {
 	font-size: 13px;
 	margin-top: 1rem;
+}
+
+/* name and picture */
+.hero-name {
+	text-align: left;
+	font-size: 45px;
+	width: 300px;
+	margin: 0 auto;
+  }
+
+  header {
+	background-color: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+header img {
+  padding: 40px;
+  float: left;
+  width: 35%;
+  height: auto;
+} 
+
+/* round the border */
+ main  {
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
 }

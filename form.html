@@ -18,31 +18,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="homepage/styles/form.css" >
     <script src="homepage/scripts/form.js"> </script>
+    <script src="homepage/scripts/counter.js"> </script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chamber.html">Chamber</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="form.html"></a>Form</li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-                <h3 class="logo">VR</h3>
-            </div>
-        </nav>
+        <picture>
+            <img src="homepage/images/1666962673865.jpg" class="hero-image" alt="profile pic" loading="pic" width="400" height="600">
+        </picture>
+            <h1 class="hero-name">Brittany Ridley</h1>
+            <button onclick="myFunction()" id="mode">☑️Darkmode</button> 
       </header> 
       <br>
+      <br>
+      <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="form.html"></a>Form</li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <h3 class="logo">VR</h3>
+        </div>
+    </nav>
+      
     <main>
+      <br>
         <div id="formmessage"></div>
         <h1>Contact Us</h1>
         <form method="get">
@@ -87,7 +96,7 @@
 <div class="ref">
 	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
 </div>
-<hr>
+<br>
 
 <label>INPUT: radio, required, common name, altered look with CSS stars</label>
 <div class="stars">
@@ -113,8 +122,6 @@
 	<option>Lemon</option>
 	<option>Orange</option>
 </datalist>
-
-        <footer></footer>
     </main>
 
 
@@ -148,5 +155,27 @@
         });
       });
     </script>
+
+    <br>
+    <footer id = "result">
+         <script>
+        var date = document.lastModified;
+        var lastModifiedDate = new Date(date);
+         document.getElementById("result").innerHTML = "The document was last modified on : " + lastModifiedDate;
+
+         // Retrieve the visitor count from local storage or initialize it to 0
+        let visitorCount = localStorage.getItem("visitorCount") || 0;
+
+        // Increment the visitor count by 1
+        visitorCount++;
+        
+        // Update the visitor count on the page
+        document.getElementById("visitorCount").textContent = visitorCount;
+
+        // Store the updated visitor count in local storage
+        localStorage.setItem("visitorCount", visitorCount);
+      </script>
+      <div id = "result"><p>&copy; Brittany Ridley | WDD 230| Phone: 222-2222 | Address: 122 First Street in New Westminster </p></div>
+         </footer>  
   </body>
 </html>
